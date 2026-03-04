@@ -12,32 +12,65 @@
         <div class="card">
             <div class="card-preview">
                 <div class="images-container">
-                    <img src="" alt="Wedding Preview" data-image="1.webp" />
+                    <img src="" alt="Wedding Preview" data-image="4.jpg" />
                 </div>
                 <div class="dots-container">
-                    <span class="dot" data-image="1.webp"></span>
-                    <span class="dot" data-image="2.jpg"></span>
-                    <span class="dot" data-image="3.jpg"></span>
+                    <span class="dot" data-image="4.jpg"></span>
+                    <span class="dot" data-image="5.jpg"></span>
+                    <span class="dot" data-image="6.jpg"></span>
+                    <span class="dot" data-image="7.jpg"></span>
+                    <span class="dot" data-image="8.jpg"></span>
                 </div>
             </div>
             <div class="card-info">
-                <div class="info" data="1.webp">
+                <div class="info" data="4.jpg">
                     <h2>Mike & Jamie</h2>
                     <p>我們要結婚了！</br>
                        誠摯邀請您於 2026 年 7 月 5 日，</br>參加我們的婚禮。</p>
                     <p>我們迫不及待地，</br>想與您分享這個特別的日子！</p>
                 </div>
-                <div class="info" data="2.jpg">
+                <div class="info" data="5.jpg">
                     <h2>婚禮地點</h2>
                     <p>證婚儀式將在君品酒店舉行，</br>
                        地址為臺北市大同區承德路一段3號。</p>
                     <p>婚禮午宴也會在同一地點舉辦。</p>
                 </div>
-                <div class="info" data="3.jpg">
+                <div class="info" data="6.jpg">
                     <h2>回覆邀請</h2>
                     <p>請於 2026 年 6 月 15 日之前回覆，</br>
                        告訴我們您是否能參加我們的特別日子。</p>
                     <p>我們期待與您一起慶祝！</p>
+                </div>
+                <div class="info" data="7.jpg">
+                    <h2>問答遊戲</h2>
+                    <p>來測試看看，您對我們的了解！</p>
+                    <div class="question">
+                        <p>Mike 和 Jamie 是在哪一年認識的？</p>
+                        <input type="text" id="question-q1" placeholder="輸入您的答案" />
+                        <button id="question-q1-submit" onclick="checkAnswer('question-q1')">提交</button>
+                        <p id="question-q1-feedback" class="feedback"></p>
+                    </div>
+                </div>
+                <div class="info" data="8.jpg">
+                    <h2>給我們的祝福</h2>
+                    <p>留下想說的話：</p>
+                    <div class="question">
+                            <div class="question-section">
+                                <form id="blessing-form">
+                                    <textarea id="blessing-name" name="name" placeholder="你的名字"></textarea>                                    
+                                    <textarea id="blessing-message" name="message" placeholder="寫下祝福內容"></textarea>
+                                    <button id="blessing-submit" type="button" onclick="submitBlessing()">提交</button>
+                                </form>
+                            </div>
+                            <button id="authorize_button">登入 Google 帳號</button>
+                            <button id="refresh_button" >刷新留言</button>
+                            <button id="signout_button">登出</button>
+
+                            <p id="content-title">來自大家的祝福：</p>
+                            <div class="content-section">
+                                <pre id="content" style="white-space: pre-wrap;"></pre>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,4 +78,8 @@
 
     <!-- Include JS files -->
     <script src="assets/js/switch-dots.js"></script>
+    <script src="assets/js/answer-check.js"></script>
+    <script src="assets/js/wedding-blessing.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
 </html>

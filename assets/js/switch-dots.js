@@ -6,9 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const basePath = 'assets/images/wedding-preview-';
 
     const backgroundColors = {
-        '1.webp': 'linear-gradient(45deg, #f3f3f3, #cadac2)',
-        '2.jpg': 'linear-gradient(45deg, #f3f3f3, #b2a4c7)',
-        '3.jpg': 'linear-gradient(45deg, #f3f3f3, #f9cbb3)'
+        '4.jpg': 'linear-gradient(45deg, #f3f3f3, #cadac2)',
+        '5.jpg': 'linear-gradient(45deg, #f3f3f3, #90b5e0)',
+        '6.jpg': 'linear-gradient(45deg, #f3f3f3, #f9cbb3)',
+        '7.jpg': 'linear-gradient(45deg, #f3f3f3, #cdcac3)',
+        '8.jpg': 'linear-gradient(45deg, #f3f3f3, #dea1a8)'
     };
 
     dots.forEach(dot => {
