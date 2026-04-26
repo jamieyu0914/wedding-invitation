@@ -1,48 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wedding Invitation</title>
+    <title>囍 婚宴電子喜帖 囍</title>
     <!-- Include CSS files -->
     <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="scroll-wrap">
+      <div class="wave"></div>
+      <div class="cloud-bar"></div>
+      <div class="wave"></div>
 
-    <div class="cards-container">
-        <div class="card">
-            <div class="card-preview">
-                <div class="images-container">
-                    <img src="" alt="Wedding Preview" data-image="1.webp" />
-                </div>
-                <div class="dots-container">
-                    <span class="dot" data-image="1.webp"></span>
-                    <span class="dot" data-image="2.jpg"></span>
-                    <span class="dot" data-image="3.jpg"></span>
-                </div>
-            </div>
-            <div class="card-info">
-                <div class="info" data="1.webp">
-                    <h2>Mike & Jamie</h2>
-                    <p>我們要結婚了！</br>
-                       誠摯邀請您於 2026 年 7 月 5 日，</br>參加我們的婚禮。</p>
-                    <p>我們迫不及待地，</br>想與您分享這個特別的日子！</p>
-                </div>
-                <div class="info" data="2.jpg">
-                    <h2>婚禮地點</h2>
-                    <p>證婚儀式將在君品酒店舉行，</br>
-                       地址為臺北市大同區承德路一段3號。</p>
-                    <p>婚禮午宴也會在同一地點舉辦。</p>
-                </div>
-                <div class="info" data="3.jpg">
-                    <h2>回覆邀請</h2>
-                    <p>請於 2026 年 6 月 15 日之前回覆，</br>
-                       告訴我們您是否能參加我們的特別日子。</p>
-                    <p>我們期待與您一起慶祝！</p>
-                </div>
-            </div>
+      <div class="hero">
+        <div class="hero-vert-l">龍鳳呈祥</div>
+        <div class="hero-vert-r">百年好合</div>
+        <div class="xi-badge"><span>囍</span></div>
+        <h1 class="hero-title">天　作　之　合</h1>
+        <p class="hero-sub">擇吉日良辰<br />行婚禮之儀，恭請親友蒞臨觀禮</p>
+      </div>
+
+      <div class="wave-thin"></div>
+      <div class="orn-div"><span class="orn-div-icon">❦</span></div>
+      <div class="wave-thin"></div>
+
+      <div class="slider-wrap">
+        <div class="slider-box" id="slider">
+          <div class="photo">
+            <img id="img2" src="/assets/images/1.jpg" alt="婚紗照" />
+          </div>
+          <div class="photo photo-left" id="leftPanel">
+            <img id="img1" src="/assets/images/0.jpg" alt="婚紗照" />
+          </div>
+          <div class="s-divider" id="sdiv"></div>
+          <div class="s-handle" id="shandle">
+            <div class="s-handle-in">&#9665;&#9655;</div>
+          </div>
+          <svg class="sc sc-tl" viewBox="0 0 26 26" fill="none">
+            <path
+              d="M2 24L2 2L24 2"
+              stroke="#f5d070"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <circle cx="2" cy="2" r="2.8" fill="#c8922a" />
+            <circle cx="2" cy="2" r="1.4" fill="#f5d070" />
+          </svg>
+          <svg class="sc sc-tr" viewBox="0 0 26 26" fill="none">
+            <path
+              d="M2 24L2 2L24 2"
+              stroke="#f5d070"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <circle cx="2" cy="2" r="2.8" fill="#c8922a" />
+            <circle cx="2" cy="2" r="1.4" fill="#f5d070" />
+          </svg>
+          <svg class="sc sc-bl" viewBox="0 0 26 26" fill="none">
+            <path
+              d="M2 24L2 2L24 2"
+              stroke="#f5d070"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <circle cx="2" cy="2" r="2.8" fill="#c8922a" />
+            <circle cx="2" cy="2" r="1.4" fill="#f5d070" />
+          </svg>
+          <svg class="sc sc-br" viewBox="0 0 26 26" fill="none">
+            <path
+              d="M2 24L2 2L24 2"
+              stroke="#f5d070"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <circle cx="2" cy="2" r="2.8" fill="#c8922a" />
+            <circle cx="2" cy="2" r="1.4" fill="#f5d070" />
+          </svg>
+          <div class="s-hint">&#8592; 拖拉滑動 &#8594;</div>
         </div>
+      </div>
+
+      <div class="wave-thin"></div>
+      <div class="orn-div"><span class="orn-div-icon">❦</span></div>
+      <div class="wave-thin"></div>
+
+      <div class="couple-section">
+        <div class="sec-title">新　人　介　紹</div>
+        <div class="sec-title-bar"></div>
+        <div class="couple-row">
+          <div class="person">
+            <div class="person-role">新　娘</div>
+            <div class="person-name">余字涵</div>
+            <div class="person-parents">父　余忠和<br />母　郭秀升</div>
+          </div>
+          <div class="couple-sep">
+            <div class="couple-sep-line"></div>
+            <span>&#10084;</span>
+            <div class="couple-sep-line"></div>
+          </div>
+          <div class="person">
+            <div class="person-role">新　郎</div>
+            <div class="person-name">何偲佑</div>
+            <div class="person-parents">父　何彥鋒<br />母　劉玉女</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-thin"></div>
+      <div class="orn-div"><span class="orn-div-icon">❦</span></div>
+      <div class="wave-thin"></div>
+
+      <div class="details-section">
+        <div class="sec-title">婚　宴　資　訊</div>
+        <div class="sec-title-bar"></div>
+        <div class="detail-grid">
+          <div class="detail-card">
+            <div class="d-icon">🗓️</div>
+            <div>
+              <div class="d-label">吉　日　良　辰</div>
+              <div class="d-val">中華民國一一五年　七月五日</div>
+              <div class="d-sub">農曆丙午年　五月二十一日　星期日</div>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="d-icon">💋</div>
+            <div>
+              <div class="d-label">證　婚　儀　式</div>
+              <div class="d-val">上午　十一時正　舉行</div>
+              <div class="d-sub">敬請提前蒞臨觀禮</div>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="d-icon">🕛</div>
+            <div>
+              <div class="d-label">宴　客　時　間</div>
+              <div class="d-val">午宴　十二時正　入席</div>
+              <div class="d-sub">
+                十二時三十分　準時開席<br />敬請提前蒞臨入座
+              </div>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="d-icon">🥂</div>
+            <div>
+              <div class="d-label">宴　客　地　點</div>
+              <div class="d-val">君品酒店　亮廳</div>
+              <div class="d-sub">
+                台北市大同區承德路一段3號　五樓<br />Palais de Chine Hotel ·
+                Taipei · 5F
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-thin"></div>
+      <div class="orn-div"><span class="orn-div-icon">❦</span></div>
+      <div class="wave-thin"></div>
+
+      <div class="poetry-section">
+        <div class="sec-title">新　人　寄　語</div>
+        <div class="sec-title-bar"></div>
+        <p class="poetry-text">
+          執子之手　與子偕老<br />緣定三生　永結同心<br />謹邀諸位親友　共見此良緣
+        </p>
+      </div>
+
+      <div class="wave-thin"></div>
+      <div class="orn-div"><span class="orn-div-icon">❦</span></div>
+      <div class="wave-thin"></div>
+
+      <div class="rsvp-section">
+        <div class="sec-title">敬　請　回　覆</div>
+        <div class="sec-title-bar"></div>
+        <div class="rsvp-body">
+          承蒙您撥冗蒞臨，深感榮幸<br />
+          煩請確認出席人數，以便安排座位<br />
+          <span class="rsvp-deadline">請於　五月二十日前　惠賜回音</span>
+        </div>
+        <a
+          class="btn-rsvp"
+          href="https://forms.google.com/"
+          target="_blank"
+          rel="noopener"
+          >線　上　報　名</a
+        >
+      </div>
+
+      <div class="wave-thin"></div>
+      <div class="orn-div"><span class="orn-div-icon">❦</span></div>
+      <div class="wave-thin"></div>
+
+      <div class="map-section">
+        <div class="sec-title">交　通　資　訊</div>
+        <div class="sec-title-bar"></div>
+        <div class="map-frame">
+          <iframe
+            src="https://maps.google.com/maps?q=%E5%90%9B%E5%93%81%E9%85%92%E5%BA%97+%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E6%89%BF%E5%BE%B7%E8%B7%AF%E4%B8%80%E6%AE%B33%E8%99%9F&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="君品酒店地圖"
+          >
+          </iframe>
+        </div>
+        <div class="transport-box">
+          <div class="transport-title">交　通　指　引</div>
+          <div class="transport-item">
+            <span class="transport-icon">&#128647;</span
+            ><span>捷運淡水信義線　台北車站，由一號出口步行約8分鐘</span>
+          </div>
+          <div class="transport-item">
+            <span class="transport-icon">&#128645;</span
+            ><span>台鐵 / 高鐵　台北車站，步行約10分鐘</span>
+          </div>
+          <div class="transport-item">
+            <span class="transport-icon">&#128652;</span
+            ><span>公車　承德路口站下車，即可抵達</span>
+          </div>
+          <div class="transport-item">
+            <span class="transport-icon">&#128664;</span
+            ><span
+              >自行開車　在市民大道右手邊看到台北轉運站大樓後，往前150公尺即可看到停車場入口（右手邊）。本飯店與京站百貨共用停車場，B4紅色格D區可搭乘君品酒店專用電梯</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="wave"></div>
+      <div class="footer">
+        <div class="footer-quote">
+          百　年　好　合　　永　結　同　心<br />感謝您成為我們幸福見證的一部分
+        </div>
+        <span class="footer-xi">囍</span>
+      </div>
+      <div class="wave"></div>
     </div>
 
     <!-- Include JS files -->
-    <script src="assets/js/switch-dots.js"></script>
+    <script src="assets/js/slider.js"></script>
+  </body>
 </html>
