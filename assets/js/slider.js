@@ -147,12 +147,21 @@ document.addEventListener("touchend", function () {
 });
 var f = 0;
 (function sweep() {
-  if (f > 70) {
+  if (f < 30) {
+    // 前30幀停留在正中間
     setPos(50);
+  } else if (f < 70) {
+    // 接下來40幀從中間往左側移動到14.2%
+    setPos(50 - (f - 30) * 0.895);
+  } else if (f < 140) {
+    // 最後70幀從左側14.2%移動到右側83.8%
+    setPos(14.2 + (f - 70) * 0.994);
+  } else {
+    // 結束，停在右側83.8%
+    setPos(83.8);
     return;
   }
   f++;
-  setPos(50 - f * 0.28);
   requestAnimationFrame(sweep);
 })();
 
