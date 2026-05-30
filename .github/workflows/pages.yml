@@ -1,9 +1,9 @@
-name: Test, Build, Deploy
+name: Unit Tests
 
 on:
   push:
     branches:
-      - feature/online-version
+      - develop
   pull_request:
 
 jobs:
@@ -24,23 +24,3 @@ jobs:
 
       - name: Run tests
         run: npm test
-
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Build project
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
-
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
