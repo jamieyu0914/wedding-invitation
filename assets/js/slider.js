@@ -3,13 +3,13 @@ const leftPnl = document.getElementById("leftPanel");
 const sdiv = document.getElementById("sdiv");
 const shandle = document.getElementById("shandle");
 
-function setPos(p) {
+export function setPos(p) {
   p = Math.max(3, Math.min(97, p));
   leftPnl.style.clipPath = "inset(0 " + (100 - p) + "% 0 0)";
   sdiv.style.left = p + "%";
   shandle.style.left = p + "%";
 }
-function pct(x) {
+export function pct(x) {
   const r = slider.getBoundingClientRect();
   return ((x - r.left) / r.width) * 100;
 }
@@ -114,7 +114,7 @@ function applyTransform(img, meta) {
   img.style.top = (imgTop + (meta.yOffset || 0) * cH).toFixed(1) + "px";
 }
 
-function initAlign() {
+export function initAlign() {
   var img1 = document.getElementById("img1");
   var img2 = document.getElementById("img2");
   applyTransform(img1, IMG1);
@@ -125,7 +125,7 @@ function initAlign() {
 var img1El = document.getElementById("img1");
 var img2El = document.getElementById("img2");
 var loaded = 0;
-function onImgLoad() {
+export function onImgLoad() {
   loaded++;
   if (loaded >= 2) initAlign();
 }
