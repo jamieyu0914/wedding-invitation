@@ -1,4 +1,6 @@
 {
+  "name": "wedding-invitation",
+  "version": "2.5.0",
   "type": "module",
   "scripts": {
     "test": "vitest",
